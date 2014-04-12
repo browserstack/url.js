@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head>
+	<meta charset="utf-8"/>
+	<title>url.js tests</title>
+	<link href="node_modules/mocha/mocha.css" rel="stylesheet" media="screen"/>
+	<script src="node_modules/mocha/mocha.js"></script>
+	<script src="node_modules/chai/chai.js"></script>
+	<script src="url.js"></script>
+</head>
+<body>
+	<div id="mocha"></div>
+	<script>mocha.setup('bdd');</script>
+	<script src="test/build.js"></script>
+<script src="test/buildget.js"></script>
+<script src="test/get.js"></script>
+<script src="test/parse.js"></script>
+
+	<script>
+		mocha.checkLeaks();
+		mocha.run();
+	</script>
+	</body>
+</html>
